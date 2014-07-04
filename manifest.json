@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+
+  "name": "TechSmith Learning Activity Capture",
+  "description": "Capstone CSE498 Chrome Extension for TechSmith",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "http://35.9.22.105:8000/xapi/",
+    "storage", "cookies", "background", "contextMenus",
+    "tabs", "http://*/*", "https://*/*"
+  ],
+
+   "icons": {
+    "128": "icon-128.png"
+  },
+
+  "background": {
+    "scripts": ["jquery-1.9.1.js", "tincan.js", "background.js"]
+  },
+
+  "content_scripts": [
+  {
+    "matches": ["http://*/*"],
+    "js": ["jquery-1.9.1.js", "contentscript.js"]
+    }]
+}

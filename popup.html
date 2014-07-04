@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TechSmith Learning Activity Capture</title>
+    <script type="text/javascript" src="jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="tincan.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
+    <style type="text/css">
+    body 
+    {
+      width: 350px;
+      overflow-x: hidden;
+      font-family: Helvetica,Arial,sans-serif;
+      font-size: 13px;
+      color: #333;
+    }
+    #panel,#flip
+    {
+      text-align: center;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #333;
+    }
+    #panel
+    {
+      padding:10px;
+      display:none;
+    }
+    #flip
+    {
+      padding: 10px;
+      background-color: #006a72;
+      color: white;
+      font-size: 26px;
+      line-height: 1.3em;
+    }
+    #userTitle
+    {
+      font-weight: bold;
+      font-size: 16px;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="flip">Learning Activity Capture</div>
+    <div id="panel">
+      <div id="loginPanel" align="center">
+        <table>
+          <tr>
+            <td>Username:</td>
+            <td><input type="text" id="username"></td>
+          </tr>
+          <tr>
+            <td>Password:</td>
+            <td><input type="password" id="password"></td>
+          </tr>
+        </table>
+        <button id="loginButton">Login</button>
+        <button id="register" href="http://35.9.22.105/xapi/register/">Register</button>
+      </div>
+      <div id="userPanel">
+        <div id="userTitle" align="center">User</div><br>
+        <button id="sendStatementButton">Send</button>
+        <button id="logoutButton">Log Out</button>
+      </div>
+    </br>
+      <a href="http:35.9.22.105/xapi/me/" id="gotoWebsite">Goto Website</a>
+    </div>
+  </body>  
+</html>
+
